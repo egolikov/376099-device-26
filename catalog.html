@@ -15,7 +15,7 @@
       <p>
         <form action="https://echo.htmlacademy.ru" method="get">
           <label for="search">Поиск по сайту</label>
-          <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+          <input type="search" name="search" id="search">
         </form>
       </p>
       <ul>
@@ -71,8 +71,9 @@
     <section>
       <h2>Фильтр:</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
-        <label for="price">Стоимость</label>
-        <input type="range" name="price" id="price">
+        <div>
+          <p>Стоимость</p>
+        </div>
         <fieldset>
           <legend>Цвет</legend>
           <ul>
@@ -207,7 +208,7 @@
           </p>
         </li>
       </ul>
-      <ul>
+      <ul aria-label="Пагинация">
         <li><a>Назад</a></li>
         <li><a>1</a></li>
         <li><a href="#">2</a></li>
