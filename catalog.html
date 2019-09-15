@@ -69,8 +69,10 @@
     </ul>
 
     <section>
-      <h2>Фильтры:</h2>
+      <h2>Фильтр:</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
+        <label for="price">Стоимость</label>
+        <input type="range" name="price" id="price">
         <fieldset>
           <legend>Цвет</legend>
           <ul>
@@ -131,11 +133,25 @@
       <h2>Список моноподов для селфи</h2>
       <div>
         <p>Сортировка:</p>
-        <a href="">По цене</a>
-        <a href="">По типу</a>
-        <a href="">По популярности</a>
-        <a href="">По возрастанию</a>
-        <a href="">По убыванию</a>
+        <ul>
+          <li>
+            <a href="">По цене</a>
+          </li>
+          <li>
+            <a href="">По типу</a>
+          </li>
+          <li>
+            <a href="">По популярности</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="">По возрастанию</a>
+          </li>
+          <li>
+            <a href="">По убыванию</a>
+          </li>
+        </ul>
       </div>
       <ul>
         <li>
