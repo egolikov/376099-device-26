@@ -1,0 +1,614 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 0.15px;
+  color: #464646;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-header {
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.main-header ul {
+  list-style: none;
+}
+
+.main-header a {
+  color: #000000;
+}
+
+.main-header a:hover {
+  opacity: 0.6;
+}
+
+.main-header a:active {
+  opacity: 0.3;
+}
+
+.search-form input {
+  color: #000000;
+
+  background-color: transparent;
+
+  border: none;
+}
+
+.search-form label {
+  opacity: 0.3;
+}
+
+.search-form input:hover + label {
+  opacity: 0.6;
+}
+
+.search-button {
+  border: none;
+  
+  background-color: transparent;
+
+  box-shadow: inset 0 0 0 2px #000000;
+}
+
+.search-button:hover {
+  color: #ffffff;
+  
+  background-color: #000000;
+}
+
+.search-button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #000000;
+} 
+
+.site-page {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.button {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  color: #000000;
+
+  background-color: #f0c52e;
+
+  border: none;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Здесь будут стили главной страницы для второго задания */
+
+.about h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.47px;
+  color: #000000;
+}
+
+.delivery-list {
+  list-style: none;
+}
+
+.delivery-list li {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.contacts h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.47px;
+  color: #000000;
+}
+
+.main-footer {
+  background-color: #464646;
+  color: #ffffff;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.main-footer a {
+  color: #ffffff;
+}
+
+.site-page {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 3.6px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.telephone {
+  text-align: right;
+}
+
+.footer-user-navigation {
+  text-align: right;
+}
+
+.footer-shop-navigation {
+  text-align: right;
+}
+
+.footer-site-navigation {
+  text-align: center;
+}
+
+.social-list {
+  text-align: center;
+}
+
+.copyright {
+  text-align: right;
+}
+
+.main-footer-logo:hover img {
+  opacity: 0.6;
+}
+
+.main-footer-logo:active img {
+  opacity: 0.3;
+}
+
+.footer-site-navigation a:hover,
+.copyright a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-site-navigation a:active,
+.copyright a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-user-navigation a,
+.footer-shop-navigation a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-user-navigation a:hover,
+.footer-shop-navigation a:hover {
+  color: #ffffff;
+}
+
+.footer-user-navigation a:active,
+.footer-shop-navigation a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-user-navigation .footer-user-exit {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.social-list a {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.social-list a:hover {
+  color: rgba(255, 255, 255, 0.60);
+}
+
+.social-list a:active {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.modal-map img {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  background-color: #ffffff;
+}
+
+.feedback-form label {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: normal;
+  color: #000000;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  color: #464646;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: normal;
+
+  background-color: rgba(229, 229, 229, 0.5);
+
+  border: none;
+}
+
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.feedback-form input:hover,
+.feedback-form textarea:hover {
+  color: #464646;
+
+  background-color: rgba(229, 229, 229, 0.8);
+
+  border: none;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  box-shadow: inset 0 0 0 3px rgba(240, 197, 46, 0.5);
+
+  background-color: #ffffff;
+}
+
+.feedback-form input:invalid {
+  background-color: rgba(237, 181, 181, 0.5);
+}
+
+/* Страница "Каталог" */
+
+.main-header .user-exit {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-header .user-exit:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-header .user-exit:active {
+  opacity: 1;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.page-title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.47px;
+  color: #000000;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  line-height: 24px;
+
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.breadcrumbs-current {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.filters {
+  background-color: #eeeeee;
+}
+
+/* Здесь будут стили для заголовка фильтров и слайдера с ценой*/
+
+.filter ul {
+  list-style: none;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: 0.14px;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.18x;
+  color: #000000;
+}
+
+.filter-input:disabled + label {
+  color: #a6a6a6;
+}
+
+/* Здесб будут стили для сортировки */
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-list h3 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: #000000;
+}
+
+.catalog-item-price {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+}
+
+/* Здесь будут стили для пагинации */
+
+/* Второе задание
+
+.slider-list {
+  list-style: none;
+}
+
+.slider-item h3 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 56px;
+  letter-spacing: 0.47px;
+  color: #000000;
+}
+
+.slider-table td {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.slider-table th {
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+  font-weight: 300;
+}
+
+.categories-list {
+  list-style: none;
+}
+
+.categories-item {
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.categories-item a {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: #000000;
+}
+
+.services {
+  background-color: #e5e5e5;
+}
+
+.services-buttons {
+  list-style: none;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-item h3 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.47px;
+  color: #000000;
+}
+
+.brands-list {
+  list-style: none;
+}
+
+Страница "Каталог"
+
+.filters-header {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.price-slider p {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.18x;
+  color: #000000;
+}
+
+.sort {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.sort ul {
+  list-style: none;
+}
+
+.sort p {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.sort a {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.14px;
+  color: #000000;
+}
+
+.sort-type a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sort-type a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort-type a:active {
+  color: #000000;
+}
+
+.sort-type .sort-active,
+.sort-type .sort-active:hover {
+  color: #000000;
+}
+
+.sort-direction {
+  text-align: right;
+}
+
+.sort-direction a {
+  opacity: 0.2;
+}
+
+.sort-direction a:hover {
+  opacity: 0.4;
+}
+
+.sort-direction a:active {
+  opacity: 1;
+}
+
+.pagination-list {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+
+  background-color: rgba(0, 0, 0, 0.08);
+
+  list-style: none;
+}
+
+.pagination-button a {
+  color: #000000;
+}
+
+.pagination-button a:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.pagination-button a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-disabled a,
+.pagination-disabled a:hover,
+.pagination-disabled a:active {
+  color: #000000;
+  background-color:transparent;
+}
+
+.pagination-item a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-item a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination-item a:active {
+  color: #000000;
+}
+
+.pagination-item-current a,
+.pagination-item-current a:active,
+.pagination-item-current a:hover {
+  color: #000000;
+}
+
+*/
