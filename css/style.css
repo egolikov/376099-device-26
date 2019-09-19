@@ -79,6 +79,10 @@ a {
   opacity: 0.6;
 }
 
+.search-form input:valid + label {
+  opacity: 0;
+}
+
 .search-button {
   border: none;
   
@@ -108,6 +112,10 @@ a {
   text-transform: uppercase;
 }
 
+.dropdown-menu {
+  background-color: #f7e296;
+}
+
 .button {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
@@ -126,7 +134,75 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* Здесь будут стили главной страницы для второго задания */
+.slider-list {
+  list-style: none;
+}
+
+.slider-item h3 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 56px;
+  letter-spacing: 0.47px;
+  color: #000000;
+}
+
+.slider-table td {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.slider-table th {
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.13px;
+  font-weight: 300;
+}
+
+.categories-list {
+  list-style: none;
+}
+
+.categories-item {
+  background-color: rgba(240, 197, 46, 0.5);
+}
+
+.categories-item a {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: #000000;
+}
+
+.services {
+  background-color: #e5e5e5;
+}
+
+.services-buttons {
+  list-style: none;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-item h3 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.47px;
+  color: #000000;
+}
+
+.brands-list {
+  list-style: none;
+}
 
 .about h2 {
   font-family: "Gilroy", Arial, sans-serif;
@@ -359,7 +435,24 @@ a {
   background-color: #eeeeee;
 }
 
-/* Здесь будут стили для заголовка фильтров и слайдера с ценой*/
+.filters-header {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3.2px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.price-slider p {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.18x;
+  color: #000000;
+}
 
 .filter ul {
   list-style: none;
@@ -383,124 +476,6 @@ a {
 
 .filter-input:disabled + label {
   color: #a6a6a6;
-}
-
-/* Здесб будут стили для сортировки */
-
-.catalog-list {
-  list-style: none;
-}
-
-.catalog-list h3 {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.18px;
-  color: #000000;
-}
-
-.catalog-item-price {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.16px;
-}
-
-/* Здесь будут стили для пагинации */
-
-/* Второе задание
-
-.slider-list {
-  list-style: none;
-}
-
-.slider-item h3 {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 800;
-  font-size: 47px;
-  line-height: 56px;
-  letter-spacing: 0.47px;
-  color: #000000;
-}
-
-.slider-table td {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 300;
-  font-size: 36px;
-  line-height: 48px;
-  color: #000000;
-}
-
-.slider-table th {
-  font-size: 13px;
-  line-height: 20px;
-  letter-spacing: 0.13px;
-  font-weight: 300;
-}
-
-.categories-list {
-  list-style: none;
-}
-
-.categories-item {
-  background-color: rgba(240, 197, 46, 0.5);
-}
-
-.categories-item a {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 24px;
-  letter-spacing: 0.18px;
-  color: #000000;
-}
-
-.services {
-  background-color: #e5e5e5;
-}
-
-.services-buttons {
-  list-style: none;
-}
-
-.services-list {
-  list-style: none;
-}
-
-.services-item h3 {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 800;
-  font-size: 47px;
-  line-height: 48px;
-  letter-spacing: 0.47px;
-  color: #000000;
-}
-
-.brands-list {
-  list-style: none;
-}
-
-Страница "Каталог"
-
-.filters-header {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 3.2px;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.price-slider p {
-  font-family: "Gilroy", Arial, sans-serif;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.18x;
-  color: #000000;
 }
 
 .sort {
@@ -561,6 +536,27 @@ a {
   opacity: 1;
 }
 
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-list h3 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: #000000;
+}
+
+.catalog-item-price {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+}
+
 .pagination-list {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
@@ -610,5 +606,3 @@ a {
 .pagination-item-current a:hover {
   color: #000000;
 }
-
-*/
