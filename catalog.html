@@ -77,17 +77,22 @@
       </nav>
     </header>
 
-    <main class="container">
-      <h1 class="page-title">Моноподы для селфи</h1>
-      <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="#">Каталог товаров</a></li>
-        <li class="breadcrumbs-current">Моноподы для селфи</li>
-      </ul>
+    <main>
+      <header class="container">
+        <h1 class="page-title">Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#">Каталог товаров</a></li>
+          <li class="breadcrumbs-current">Моноподы для селфи</li>
+        </ul>
+      </header>
 
       <div class="catalog-columns">
         <section class="filters">
-          <h2 class="filters-header">Фильтр:</h2>
+          <div class="filters-header-wrapper">
+            <h2 class="filters-header">Фильтр:</h2>
+          </div>
+
           <form
             class="filter"
             action="https://echo.htmlacademy.ru"
@@ -195,27 +200,29 @@
 
         <section class="catalog">
           <h2 class="visually-hidden">Список моноподов для селфи</h2>
-          <div class="sort">
-            <p>Сортировка:</p>
-            <ul class="sort-type">
-              <li>
-                <a class="sort-active">По цене</a>
-              </li>
-              <li>
-                <a href="">По типу</a>
-              </li>
-              <li>
-                <a href="">По популярности</a>
-              </li>
-            </ul>
-            <ul class="sort-direction">
-              <li>
-                <a href="">По возрастанию</a>
-              </li>
-              <li>
-                <a href="">По убыванию</a>
-              </li>
-            </ul>
+          <div class="sort-wrapper">
+            <div class="sort">
+              <p>Сортировка:</p>
+              <ul class="sort-type">
+                <li>
+                  <a class="sort-active">По цене</a>
+                </li>
+                <li>
+                  <a href="">По типу</a>
+                </li>
+                <li>
+                  <a href="">По популярности</a>
+                </li>
+              </ul>
+              <ul class="sort-direction">
+                <li>
+                  <a href="">По возрастанию</a>
+                </li>
+                <li>
+                  <a href="">По убыванию</a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <ul class="catalog-list">
@@ -306,7 +313,7 @@
     <footer class="main-footer">
       <div class="container">
         <div class="footer-first-line">
-          <a class="main-footer-logo">
+          <a href="index.html" class="main-footer-logo">
             <img
               src="img/logo-yellow.svg"
               width="163"
@@ -337,18 +344,17 @@
           </p>
         </div>
         <div class="footer-third-line">
-          <div class="social">
-            <ul class="social-list">
-              <li class="social-fb"><a href="#">Фейсбук</a></li>
-              <li class="social-inst"><a href="#">Инстаграм</a></li>
-              <li class="social-tw"><a href="#">Твиттер</a></li>
-            </ul>
-          </div>
-          <p class="copyright">
+          <div></div>
+          <ul class="social-list">
+            <li class="social-fb"><a href="#">Фейсбук</a></li>
+            <li class="social-inst"><a href="#">Инстаграм</a></li>
+            <li class="social-tw"><a href="#">Твиттер</a></li>
+          </ul>
+          <div class="copyright">
             <a href="https://htmlacademy.ru/intensive/htmlcss">
               HTML Academy
             </a>
-          </p>
+          </div>
         </div>
       </div>
     </footer>
