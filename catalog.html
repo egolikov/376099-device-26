@@ -112,6 +112,12 @@
           >
             <div class="price-slider">
               <p>Стоимость</p>
+              <div class="price-slider-range">
+                <div class="price-slider-controls">
+                  <div class="price-slider-handle start" tabindex="0"></div>
+                  <div class="price-slider-handle end" tabindex="0"></div>
+                </div>
+              </div>
             </div>
             <fieldset class="filter-color">
               <legend>Цвет</legend>
@@ -184,7 +190,7 @@
                     type="radio"
                     class="visually-hidden filter-input filter-input-radio"
                     name="bluetooth"
-                    value="1"
+                    value="yes"
                     id="radio-1"
                     checked
                   />
@@ -197,7 +203,7 @@
                     type="radio"
                     class="visually-hidden filter-input filter-input-radio"
                     name="bluetooth"
-                    value="2"
+                    value="no"
                     id="radio-2"
                   />
                   <label for="radio-2">
@@ -227,11 +233,13 @@
                 </li>
               </ul>
               <ul class="sort-direction">
-                <li>
-                  <a href="">По возрастанию</a>
+                <li class="upward">
+                  <a href=""
+                    ><span class="visually-hidden">По возрастанию</span></a
+                  >
                 </li>
-                <li>
-                  <a href="">По убыванию</a>
+                <li class="downward current">
+                  <a><span class="visually-hidden">По убыванию</span></a>
                 </li>
               </ul>
             </div>
@@ -240,55 +248,70 @@
           <ul class="catalog-list">
             <li class="catalog-item">
               <div class="catalog-item-description">
-                <h3>
-                  Любительская селфи-палка
-                </h3>
+                <a href="">
+                  <h3>
+                    Любительская селфи-палка
+                  </h3>
+                </a>
                 <p class="catalog-item-price">
                   500 руб.
                 </p>
               </div>
-              <a href="">
-                <p class="catalog-item-image">
-                  <img
-                    src="img/item-1.jpg"
-                    width="360"
-                    height="380"
-                    alt="Любительская селфи-палка"
-                  />
-                </p>
-              </a>
+              <p class="catalog-item-image">
+                <img
+                  src="img/item-1.jpg"
+                  width="360"
+                  height="380"
+                  alt="Любительская селфи-палка"
+                />
+              </p>
+              <div class="catalog-item-hover">
+                <a href="" class="button to-cart">
+                  В корзину
+                </a>
+                <a href="" class="to-compare">
+                  Добавить к сравнению
+                </a>
+              </div>
             </li>
             <li class="catalog-item">
               <div class="catalog-item-description">
-                <h3>
-                  Профессиональная<br>селфи-палка
-                </h3>
+                <a href="">
+                  <h3>Профессиональная<br />селфи-палка</h3>
+                </a>
                 <p class="catalog-item-price">
                   1 500 руб.
                 </p>
               </div>
-              <a href="">
-                <p class="catalog-item-image">
-                  <img
-                    src="img/item-2.jpg"
-                    width="360"
-                    height="380"
-                    alt="Любительская селфи-палка"
-                  />
-                </p>
-              </a>
+              <p class="catalog-item-image">
+                <img
+                  src="img/item-2.jpg"
+                  width="360"
+                  height="380"
+                  alt="Любительская селфи-палка"
+                />
+              </p>
+              <div class="catalog-item-hover">
+                <a href="" class="button to-cart">
+                  В корзину
+                </a>
+                <a href="" class="to-compare">
+                  Добавить к сравнению
+                </a>
+              </div>
             </li>
             <li class="catalog-item">
               <div class="catalog-item-description">
-                <h3>
-                  Непотопляемая селфи-палка
-                </h3>
+                <a href="">
+                  <h3>
+                    Непотопляемая селфи-палка
+                  </h3>
+                </a>
                 <p class="catalog-item-price">
                   2 500 руб.
                 </p>
               </div>
-              <a href="">
-                <p class="catalog-item-image">
+                              <p class="catalog-item-image">
                   <img
                     src="img/item-3.jpg"
                     width="360"
@@ -296,19 +319,27 @@
                     alt="Любительская селфи-палка"
                   />
                 </p>
-              </a>
+              <div class="catalog-item-hover">
+                <a href="" class="button to-cart">
+                  В корзину
+                </a>
+                <a href="" class="to-compare">
+                  Добавить к сравнению
+                </a>
+              </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item new">
               <div class="catalog-item-description">
-                <h3>
-                  Селфи-палка «Следуй за мной»
-                </h3>
+                <a href="">
+                  <h3>
+                    Селфи-палка «Следуй за мной»
+                  </h3>
+                </a>
                 <p class="catalog-item-price">
                   4 900 руб.
                 </p>
               </div>
-              <a href="">
-                <p class="catalog-item-image">
+                              <p class="catalog-item-image">
                   <img
                     src="img/item-4.jpg"
                     width="360"
@@ -316,16 +347,27 @@
                     alt="Любительская селфи-палка"
                   />
                 </p>
-              </a>
+              <div class="catalog-item-hover">
+                <a href="" class="button to-cart">
+                  В корзину
+                </a>
+                <a href="" class="to-compare">
+                  Добавить к сравнению
+                </a>
+              </div>
             </li>
           </ul>
-          <ul class="pagination-list" aria-label="Пагинация">
-            <li class="pagination-button pagination-disabled"><a>Назад</a></li>
-            <li class="pagination-item pagination-item-current"><a>1</a></li>
-            <li class="pagination-item"><a href="#">2</a></li>
-            <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-button"><a href="#">Вперёд</a></li>
-          </ul>
+          <div class="pagination" aria-label="Пагинация">
+            <a class="pagination-button pagination-disabled">Назад</a>
+            <ul class="pagination-list">
+              <li class="pagination-item pagination-item-current">
+                <a>1</a>
+              </li>
+              <li class="pagination-item"><a href="#">2</a></li>
+              <li class="pagination-item"><a href="#">3</a></li>
+            </ul>
+            <a class="pagination-button" href="#">Вперёд</a>
+          </div>
         </section>
       </div>
     </main>

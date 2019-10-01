@@ -94,7 +94,18 @@
       <section class="promo-slider container">
         <h2 class="visually-hidden">Промо-слайдер</h2>
         <ul class="slider-list">
-          <li class="slider-item">
+          <ul class="slider-pagination">
+            <li class="slider-pagination-active">
+              <button type="button"></button>
+            </li>
+            <li>
+              <button type="button"></button>
+            </li>
+            <li>
+              <button type="button"></button>
+            </li>
+          </ul>
+          <li class="slider-item slide-1">
             <div class="slider-description">
               <h3>Делай селфи, <br />как Бен Стиллер!</h3>
               <p>
@@ -102,16 +113,20 @@
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
               </p>
               <table class="slider-table">
-                <tr>
-                  <th>Длина палки</th>
-                  <th>Вес палки</th>
-                  <th>Материал</th>
-                </tr>
-                <tr>
-                  <td>8,5 м</td>
-                  <td>5 кг</td>
-                  <td>Карбон</td>
-                </tr>
+                <thead>
+                  <tr>
+                    <th>Длина палки</th>
+                    <th>Вес палки</th>
+                    <th>Материал</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>8,5 м</td>
+                    <td>5 кг</td>
+                    <td>Карбон</td>
+                  </tr>
+                </tbody>
               </table>
 
               <a class="button" href="">Подробнее</a>
@@ -125,7 +140,7 @@
               />
             </div>
           </li>
-          <li class="slider-item">
+          <li class="slider-item slide-2">
             <div class="slider-description">
               <h3>Худеем <br />правильно!</h3>
               <p>
@@ -133,12 +148,16 @@
                 не пропускать занятия и соблюдать диету.
               </p>
               <table class="slider-table">
-                <tr>
-                  <th>Без подзарядки</th>
-                </tr>
-                <tr>
-                  <td>48 ч</td>
-                </tr>
+                <thead>
+                  <tr>
+                    <th>Без подзарядки</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>48 часов</td>
+                  </tr>
+                </tbody>
               </table>
 
               <a class="button" href="">Подробнее</a>
@@ -152,7 +171,7 @@
               />
             </div>
           </li>
-          <li class="slider-item">
+          <li class="slider-item slide-3">
             <div class="slider-description">
               <h3>Порхает как бабочка, <br />жалит как пчела!</h3>
               <p>
@@ -160,14 +179,18 @@
                 мощным лазером, замаскированным под стандартную камеру.
               </p>
               <table class="slider-table">
-                <tr>
-                  <th>Дальность полета</th>
-                  <th>Радиус поражения</th>
-                </tr>
-                <tr>
-                  <td>800 м</td>
-                  <td>50 м</td>
-                </tr>
+                <thead>
+                  <tr>
+                    <th>Дальность полета</th>
+                    <th>Радиус поражения</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>800 м</td>
+                    <td>50 м</td>
+                  </tr>
+                </tbody>
               </table>
 
               <a class="button" href="">Подробнее</a>
@@ -194,7 +217,7 @@
           </li>
           <li class="categories-item">
             <a href="catalog.html">
-              <h3>Моноподы для селфи</h3>
+              <h3>Моноподы<br>для селфи</h3>
             </a>
           </li>
           <li class="categories-item">
@@ -225,7 +248,7 @@
           <h2 class="visually-hidden">Сервисы</h2>
           <ul class="services-buttons">
             <li>
-              <button type="button" class="button button-services">
+              <button type="button" class="button services-button-current">
                 Доставка
               </button>
             </li>
@@ -241,7 +264,7 @@
             </li>
           </ul>
           <ul class="services-list">
-            <li class="services-item">
+            <li class="services-item delivery">
               <h3>Доставка</h3>
               <p>
                 Мы с удовольствием доставим ваш товар прямо к вашему подъезду
@@ -249,14 +272,14 @@
                 на ваш этаж.
               </p>
             </li>
-            <li class="services-item">
+            <li class="services-item warranty">
               <h3>Гарантия</h3>
               <p>
                 Если из-за возгорания купленного у нас товара у вас сгорит дом —
                 не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
               </p>
             </li>
-            <li class="services-item">
+            <li class="services-item credit">
               <h3>Кредит</h3>
               <p>
                 Залезть в долговую яму стало проще! Кредитные консультанты
@@ -514,7 +537,7 @@
         action="https://echo.htmlacademy.ru"
         method="post"
       >
-        <p>
+        <p class="name">
           <label for="name">Ваше имя:</label>
           <input type="text" name="name" id="name" placeholder="Имя Фамилия" />
         </p>
