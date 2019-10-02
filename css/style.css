@@ -912,6 +912,41 @@ a {
 .brands-list li {
   width: 260px;
   height: 100px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.brands-list li:first-child {
+  background-image: url("../img/logo-1.jpg");
+}
+
+.brands-list li:first-child:hover {
+  background-image: url("../img/logo-1-hover.jpg");
+}
+
+.brands-list li:nth-child(2) {
+  background-image: url("../img/logo-2.jpg");
+}
+
+.brands-list li:nth-child(2):hover {
+  background-image: url("../img/logo-2-hover.jpg");
+}
+
+.brands-list li:nth-child(3) {
+  background-image: url("../img/logo-3.jpg");
+}
+
+.brands-list li:nth-child(3):hover {
+  background-image: url("../img/logo-3-hover.jpg");
+}
+
+.brands-list li:nth-child(4) {
+  background-image: url("../img/logo-4.jpg");
+}
+
+.brands-list li:nth-child(4):hover {
+  background-image: url("../img/logo-4-hover.jpg");
 }
 
 .info-columns {
@@ -1378,6 +1413,8 @@ p.contacts-map {
   width: 20px;
   height: 22px;
 
+  border: none;
+  background-color: transparent;
   background-image: url("../img/filter-button.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1415,7 +1452,7 @@ p.contacts-map {
 
 .price-slider-handle::after {
   position: absolute;
-  top: 18px;
+  top: 24px;
 
   display: block;
 
@@ -1424,13 +1461,13 @@ p.contacts-map {
 }
 
 .price-slider-handle.start::after {
-  content: "от 0";
+  content: "от " attr(value);
 
   left: 4px;
 }
 
 .price-slider-handle.end::after {
-  content: "до 5000";
+  content: "до " attr(value);
 
   left: 10px;
 
@@ -1438,12 +1475,16 @@ p.contacts-map {
 }
 
 .price-slider-handle.start:active::after {
-  top: 19px;
+  top: 25px;
   left: 5px;
 }
 
+.price-slider-handle.start:focus::after {
+  outline: none;
+}
+
 .price-slider-handle.end:active::after {
-  top: 19px;
+  top: 25px;
   left: 11px;
 }
 
