@@ -37,7 +37,9 @@
                 required
               />
               <label for="search">Поиск по сайту</label>
-              <button class="search-button" type="submit">Найти</button>
+              <button class="search-button" type="submit">
+                <span>Найти</span>
+              </button>
             </form>
           </div>
           <ul class="user-navigation">
@@ -93,18 +95,31 @@
 
       <section class="promo-slider container">
         <h2 class="visually-hidden">Промо-слайдер</h2>
+        <input
+          class="visually-hidden"
+          type="radio"
+          name="slider-control"
+          id="sl-1"
+          checked
+        />
+        <input
+          class="visually-hidden"
+          type="radio"
+          name="slider-control"
+          id="sl-2"
+        />
+        <input
+          class="visually-hidden"
+          type="radio"
+          name="slider-control"
+          id="sl-3"
+        />
+        <ul class="slider-pagination">
+          <li><label for="sl-1">1 слайд</label></li>
+          <li><label for="sl-2">2 слайд</label></li>
+          <li><label for="sl-3">3 слайд</label></li>
+        </ul>
         <ul class="slider-list">
-          <ul class="slider-pagination">
-            <li class="slider-pagination-active">
-              <button type="button"></button>
-            </li>
-            <li>
-              <button type="button"></button>
-            </li>
-            <li>
-              <button type="button"></button>
-            </li>
-          </ul>
           <li class="slider-item slide-1">
             <div class="slider-description">
               <h3>Делай селфи, <br />как Бен Стиллер!</h3>
@@ -246,21 +261,35 @@
       <div class="services-wrapper">
         <section class="services container">
           <h2 class="visually-hidden">Сервисы</h2>
+          
+          <input
+            class="visually-hidden"
+            type="radio"
+            name="services-control"
+            id="sc-1"
+            checked
+          />
+          <input
+            class="visually-hidden"
+            type="radio"
+            name="services-control"
+            id="sc-2"
+          />
+          <input
+            class="visually-hidden"
+            type="radio"
+            name="services-control"
+            id="sc-3"
+          />
           <ul class="services-buttons">
             <li>
-              <button type="button" class="button services-button-current">
-                Доставка
-              </button>
+              <label for="sc-1" class="button service-button">Доставка</label>
             </li>
             <li>
-              <button type="button" class="button button-services">
-                Гарантия
-              </button>
+              <label for="sc-2" class="button service-button">Гарантия</label>
             </li>
             <li>
-              <button type="button" class="button button-services">
-                Кредит
-              </button>
+              <label for="sc-3" class="button service-button">Кредит</label>
             </li>
           </ul>
           <ul class="services-list">
@@ -276,14 +305,14 @@
               <h3>Гарантия</h3>
               <p>
                 Если из-за возгорания купленного у нас товара у вас сгорит дом —
-                не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+                не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.
               </p>
             </li>
             <li class="services-item credit">
               <h3>Кредит</h3>
               <p>
-                Залезть в долговую яму стало проще! Кредитные консультанты
-                подберут для вас наиболее выгодные условия кредита. Выгодные для
+                Залезть в долговую яму стало проще! Кредитные<br>консультанты
+                подберут для вас наиболее выгодные<br>условия кредита. Выгодные для
                 нашего банка, разумеется.
               </p>
             </li>
@@ -336,7 +365,9 @@
               />
             </a>
           </p>
-          <button class="button" type="button">Напишите нам</button>
+          <button class="button" type="button">
+            <span>Напишите нам</span>
+          </button>
         </section>
       </div>
     </main>
