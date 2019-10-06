@@ -261,7 +261,7 @@
       <div class="services-wrapper">
         <section class="services container">
           <h2 class="visually-hidden">Сервисы</h2>
-          
+
           <input
             class="visually-hidden"
             type="radio"
@@ -305,15 +305,16 @@
               <h3>Гарантия</h3>
               <p>
                 Если из-за возгорания купленного у нас товара у вас сгорит дом —
-                не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.
+                не переживайте, мы выдадим вам новый.<br />Товар, не дом,
+                конечно же.
               </p>
             </li>
             <li class="services-item credit">
               <h3>Кредит</h3>
               <p>
-                Залезть в долговую яму стало проще! Кредитные<br>консультанты
-                подберут для вас наиболее выгодные<br>условия кредита. Выгодные для
-                нашего банка, разумеется.
+                Залезть в долговую яму стало проще! Кредитные<br />консультанты
+                подберут для вас наиболее выгодные<br />условия кредита.
+                Выгодные для нашего банка, разумеется.
               </p>
             </li>
           </ul>
@@ -356,7 +357,7 @@
             проверить работоспособность покупки. Всякое бывает.
           </p>
           <p class="contacts-map">
-            <a href="">
+            <a href="" class="map-link">
               <img
                 src="img/map.jpg"
                 width="560"
@@ -365,7 +366,7 @@
               />
             </a>
           </p>
-          <button class="button" type="button">
+          <button class="button contacts-button" type="button">
             <span>Напишите нам</span>
           </button>
         </section>
@@ -584,5 +585,79 @@
         <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
+
+    <script>
+      var contactsButton = document.querySelector(".contacts-button");
+
+      var contactsPopup = document.querySelector(".modal-feedback");
+      var contactsClose = contactsPopup.querySelector(".modal-close");
+
+      var contactsForm = contactsPopup.querySelector("form");
+      var contactsName = contactsForm.querySelector("[name=name]");
+      var contactsEmail = contactsForm.querySelector("[name=email]");
+      var contactsText = contactsForm.querySelector("[name=text]");
+
+      var isStorageSupport = true;
+      var storageName = "";
+      var storageEmail = "";
+
+      try {
+        storageName = localStorage.getItem("name");
+        storageEmail = localStorage.getItem("email");
+      } catch (err) {
+        isStorageSupport = false;
+      }
+
+      contactsButton.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        contactsPopup.classList.remove("modal-closing");
+        contactsPopup.classList.add("modal-show");
+
+        if (storageName && storageEmail) {
+          contactsName.value = storageName;
+          contactsEmail.value = storageEmail;
+          contactsText.focus();
+        } else {
+          contactsName.focus();
+        }
+      });
+
+      contactsClose.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        contactsPopup.classList.remove("modal-error");
+        contactsPopup.classList.add("modal-closing");
+        setTimeout(function() {
+          contactsPopup.classList.remove("modal-show");
+        }, 650);
+      });
+
+      contactsForm.addEventListener("submit", function(evt) {
+        if (
+          !contactsName.value ||
+          !contactsEmail.value ||
+          !contactsText.value
+        ) {
+          evt.preventDefault();
+          contactsPopup.classList.remove("modal-error");
+          contactsPopup.offsetWidth = contactsPopup.offsetWidth;
+          contactsPopup.classList.add("modal-error");
+        } else {
+          if (isStorageSupport) {
+            localStorage.setItem("name", contactsName.value);
+            localStorage.setItem("email", contactsEmail.value);
+          }
+        }
+      });
+
+      window.addEventListener("keydown", function(evt) {
+        if (evt.keyCode === 27) {
+          evt.preventDefault();
+          if (contactsPopup.classList.contains("modal-show")) {
+            contactsPopup.classList.remove("modal-show");
+            contactsPopup.classList.remove("modal-error");
+          }
+        }
+      });
+    </script>
   </body>
 </html>

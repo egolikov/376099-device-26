@@ -1098,6 +1098,44 @@ p.contacts-map {
   margin-bottom: 69px;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -2000px);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-52%, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(-48%, -50%);
+  }
+}
+
+@keyframes closing {
+  100% {
+    opacity: 0;
+  }
+}
+
 .modal {
   position: fixed;
   top: 50%;
@@ -1137,6 +1175,8 @@ p.contacts-map {
   opacity: 0.5;
 
   border: none;
+
+  cursor: pointer;
 }
 
 .modal-close::after {
@@ -1275,6 +1315,19 @@ p.contacts-map {
   background-color: rgba(237, 181, 181, 0.5);
 }
 
+.modal-show {
+  display: block;
+
+  animation: bounce 0.7s;
+}
+
+.modal-error {
+  animation: shake 0.7s;
+}
+
+.modal-closing {
+  animation: closing 0.7s;
+}
 /* Страница "Каталог" */
 
 .main-header .user-exit {
