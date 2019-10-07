@@ -1143,28 +1143,41 @@ p.contacts-map {
   transform: translate(-50%, -50%);
 
   background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .modal-map {
   display: none;
-}
-
-.modal-map img {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.modal-map p {
-  position: relative;
 
   width: 960px;
   height: 559px;
-  margin: 0 auto;
+}
+
+.modal-map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+
+  line-height: 0;
+
+  background-color: #f1f1f1;
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+
+  background-color: #f1f1f1;
 }
 
 .modal-close {
   position: absolute;
   top: 22px;
   right: 22px;
+  z-index: 3;
 
   width: 55px;
   height: 55px;
