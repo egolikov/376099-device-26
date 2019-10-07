@@ -551,10 +551,9 @@
           height="559"
           alt="г. Москва, ул. Строителей, 15"
         />
-        
       </p>
       <button class="modal-close" type="button">
-          <span class="visually-hidden">Закрыть</span>
+        <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
 
@@ -625,9 +624,13 @@
         if (storageName && storageEmail) {
           contactsName.value = storageName;
           contactsEmail.value = storageEmail;
-          contactsText.focus();
+          setTimeout(function() {
+            contactsText.focus();
+          }, 500);
         } else {
-          contactsName.focus();
+          setTimeout(function() {
+            contactsName.focus();
+          }, 500);
         }
       });
 
@@ -672,7 +675,7 @@
 
       var mapPopup = document.querySelector(".modal-map");
       var mapClose = mapPopup.querySelector(".modal-close");
-      
+
       mapLink.addEventListener("click", function(evt) {
         evt.preventDefault();
         mapPopup.classList.remove("modal-closing");
