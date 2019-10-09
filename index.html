@@ -7,8 +7,8 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize-min.css" />
+    <link rel="stylesheet" href="css/style-min.css" />
   </head>
 
   <body>
@@ -96,29 +96,24 @@
       <section class="promo-slider container">
         <h2 class="visually-hidden">Промо-слайдер</h2>
         <input
-          class="visually-hidden"
+          class="visually-hidden slider-control-1"
           type="radio"
           name="slider-control"
-          id="sl-1"
+          id="slider-control-1"
           checked
         />
         <input
-          class="visually-hidden"
+          class="visually-hidden slider-control-2"
           type="radio"
           name="slider-control"
-          id="sl-2"
+          id="slider-control-2"
         />
         <input
-          class="visually-hidden"
+          class="visually-hidden slider-control-3"
           type="radio"
           name="slider-control"
-          id="sl-3"
+          id="slider-control-3"
         />
-        <ul class="slider-pagination">
-          <li><label for="sl-1">1 слайд</label></li>
-          <li><label for="sl-2">2 слайд</label></li>
-          <li><label for="sl-3">3 слайд</label></li>
-        </ul>
         <ul class="slider-list">
           <li class="slider-item slide-1">
             <div class="slider-description">
@@ -143,8 +138,14 @@
                   </tr>
                 </tbody>
               </table>
-
-              <a class="button" href="">Подробнее</a>
+              <div class="slider-line">
+                <a class="button" href="">Подробнее</a>
+                <ul class="slider-pagination">
+                  <li><label for="slider-control-1">1 слайд</label></li>
+                  <li><label for="slider-control-2">2 слайд</label></li>
+                  <li><label for="slider-control-3">3 слайд</label></li>
+                </ul>
+              </div>
             </div>
             <div class="slider-image-container">
               <img
@@ -174,8 +175,14 @@
                   </tr>
                 </tbody>
               </table>
-
-              <a class="button" href="">Подробнее</a>
+              <div class="slider-line">
+                <a class="button" href="">Подробнее</a>
+                <ul class="slider-pagination">
+                  <li><label for="slider-control-1">1 слайд</label></li>
+                  <li><label for="slider-control-2">2 слайд</label></li>
+                  <li><label for="slider-control-3">3 слайд</label></li>
+                </ul>
+              </div>
             </div>
             <div class="slider-image-container">
               <img
@@ -207,8 +214,14 @@
                   </tr>
                 </tbody>
               </table>
-
-              <a class="button" href="">Подробнее</a>
+              <div class="slider-line">
+                <a class="button" href="">Подробнее</a>
+                <ul class="slider-pagination">
+                  <li><label for="slider-control-1">1 слайд</label></li>
+                  <li><label for="slider-control-2">2 слайд</label></li>
+                  <li><label for="slider-control-3">3 слайд</label></li>
+                </ul>
+              </div>
             </div>
             <div class="slider-image-container">
               <img
@@ -226,32 +239,32 @@
         <h2 class="visually-hidden">Популярные категории</h2>
         <ul class="categories-list">
           <li class="categories-item">
-            <a href="">
+            <a class="cat-item-link" href="catalog.html">
               <h3>Виртуальная реальность</h3>
             </a>
           </li>
           <li class="categories-item">
-            <a href="catalog.html">
+            <a class="cat-item-link" href="catalog.html">
               <h3>Моноподы<br />для селфи</h3>
             </a>
           </li>
           <li class="categories-item">
-            <a href="">
+            <a class="cat-item-link" href="catalog.html">
               <h3>Экшн-камеры</h3>
             </a>
           </li>
           <li class="categories-item">
-            <a href="">
+            <a class="cat-item-link" href="catalog.html">
               <h3>Фитнес-браслеты</h3>
             </a>
           </li>
           <li class="categories-item">
-            <a href="">
+            <a class="cat-item-link" href="catalog.html">
               <h3>Умные часы</h3>
             </a>
           </li>
           <li class="categories-item">
-            <a href="">
+            <a class="cat-item-link" href="catalog.html">
               <h3>Квадрокоптеры</h3>
             </a>
           </li>
@@ -263,20 +276,20 @@
           <h2 class="visually-hidden">Сервисы</h2>
 
           <input
-            class="visually-hidden"
+            class="visually-hidden sc-1"
             type="radio"
             name="services-control"
             id="sc-1"
             checked
           />
           <input
-            class="visually-hidden"
+            class="visually-hidden sc-2"
             type="radio"
             name="services-control"
             id="sc-2"
           />
           <input
-            class="visually-hidden"
+            class="visually-hidden sc-3"
             type="radio"
             name="services-control"
             id="sc-3"
@@ -347,7 +360,7 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a class="button" href="">Подробнее о нас</a>
+          <a class="button" href="about.html">Подробнее о нас</a>
         </section>
 
         <section class="contacts">
@@ -357,7 +370,7 @@
             проверить работоспособность покупки. Всякое бывает.
           </p>
           <p class="contacts-map">
-            <a href="" class="map-link">
+            <a href="https://goo.gl/maps/bUT2QumcJzh55hBg9" class="map-link">
               <img
                 src="img/map.jpg"
                 width="560"
@@ -366,9 +379,9 @@
               />
             </a>
           </p>
-          <button class="button contacts-button" type="button">
+          <a class="button contacts-button" href="contacts.html">
             <span>Напишите нам</span>
-          </button>
+          </a>
         </section>
       </div>
     </main>
@@ -401,9 +414,9 @@
             <li><a class="site-page" href="">Гарантия</a></li>
             <li><a class="site-page" href="">Контакты</a></li>
           </ul>
-          <p class="telephone">
+          <a class="telephone" href="tel:+74954959595">
             Тел.: +7 (495) 495-95-95
-          </p>
+          </a>
         </div>
         <div class="footer-third-line">
           <div></div>
@@ -540,9 +553,6 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592805!3d55.68703098053581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1570378601104!5m2!1sru!2sru"
         width="960"
         height="559"
-        frameborder="0"
-        style="border:0;"
-        allowfullscreen=""
       ></iframe>
       <p>
         <img
@@ -594,101 +604,6 @@
       </button>
     </section>
 
-    <script>
-      var contactsButton = document.querySelector(".contacts-button");
-
-      var contactsPopup = document.querySelector(".modal-feedback");
-      var contactsClose = contactsPopup.querySelector(".modal-close");
-
-      var contactsForm = contactsPopup.querySelector("form");
-      var contactsName = contactsForm.querySelector("[name=name]");
-      var contactsEmail = contactsForm.querySelector("[name=email]");
-      var contactsText = contactsForm.querySelector("[name=text]");
-
-      var isStorageSupport = true;
-      var storageName = "";
-      var storageEmail = "";
-
-      try {
-        storageName = localStorage.getItem("name");
-        storageEmail = localStorage.getItem("email");
-      } catch (err) {
-        isStorageSupport = false;
-      }
-
-      contactsButton.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        contactsPopup.classList.remove("modal-closing");
-        contactsPopup.classList.add("modal-show");
-
-        if (storageName && storageEmail) {
-          contactsName.value = storageName;
-          contactsEmail.value = storageEmail;
-          setTimeout(function() {
-            contactsText.focus();
-          }, 500);
-        } else {
-          setTimeout(function() {
-            contactsName.focus();
-          }, 500);
-        }
-      });
-
-      contactsClose.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        contactsPopup.classList.remove("modal-error");
-        contactsPopup.classList.add("modal-closing");
-        setTimeout(function() {
-          contactsPopup.classList.remove("modal-show");
-        }, 650);
-      });
-
-      contactsForm.addEventListener("submit", function(evt) {
-        if (
-          !contactsName.value ||
-          !contactsEmail.value ||
-          !contactsText.value
-        ) {
-          evt.preventDefault();
-          contactsPopup.classList.remove("modal-error");
-          contactsPopup.offsetWidth = contactsPopup.offsetWidth;
-          contactsPopup.classList.add("modal-error");
-        } else {
-          if (isStorageSupport) {
-            localStorage.setItem("name", contactsName.value);
-            localStorage.setItem("email", contactsEmail.value);
-          }
-        }
-      });
-
-      window.addEventListener("keydown", function(evt) {
-        if (evt.keyCode === 27) {
-          evt.preventDefault();
-          if (contactsPopup.classList.contains("modal-show")) {
-            contactsPopup.classList.remove("modal-show");
-            contactsPopup.classList.remove("modal-error");
-          }
-        }
-      });
-
-      var mapLink = document.querySelector(".map-link");
-
-      var mapPopup = document.querySelector(".modal-map");
-      var mapClose = mapPopup.querySelector(".modal-close");
-
-      mapLink.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        mapPopup.classList.remove("modal-closing");
-        mapPopup.classList.add("modal-show");
-      });
-
-      mapClose.addEventListener("click", function(evt) {
-        evt.preventDefault();
-        mapPopup.classList.add("modal-closing");
-        setTimeout(function() {
-          mapPopup.classList.remove("modal-show");
-        }, 650);
-      });
-    </script>
+    <script src="js/script-min.js"></script>
   </body>
 </html>
