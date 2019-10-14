@@ -37,17 +37,17 @@
                 required
               />
               <label for="search">Поиск по сайту</label>
-              <button class="search-button" type="submit"><span>Найти</span></button>
+              <button class="search-button" type="submit">Найти</button>
             </form>
           </div>
-          <ul class="user-navigation">
-            <li><a class="enter" href="profile.html">Валентин Петухов</a></li>
-            <li><a class="user-exit" href="">Выйти</a></li>
-          </ul>
-          <ul class="shop-navigation">
-            <li><a class="compare" href="">Сравнить</a></li>
-            <li><a class="cart" href="">Корзина</a></li>
-          </ul>
+          <div class="user-navigation">
+            <a class="enter" href="profile.html">Валентин Петухов</a>
+            <a class="user-exit" href="">Выйти</a>
+          </div>
+          <div class="shop-navigation">
+            <a class="compare" href="">Сравнить</a>
+            <a class="cart" href="">Корзина</a>
+          </div>
         </div>
         <ul class="site-navigation">
           <li>
@@ -220,7 +220,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button" type="submit"><span>Показать</span></button>
+            <button class="button" type="submit">Показать</button>
           </form>
         </section>
 
@@ -240,16 +240,14 @@
                   <a href="">По популярности</a>
                 </li>
               </ul>
-              <ul class="sort-direction">
-                <li class="upward">
-                  <a href=""
-                    ><span class="visually-hidden">По возрастанию</span></a
-                  >
-                </li>
-                <li class="downward current">
-                  <a><span class="visually-hidden">По убыванию</span></a>
-                </li>
-              </ul>
+              <div class="sort-direction">
+                <a class="upward" href=""
+                  ><span class="visually-hidden">По возрастанию</span></a
+                >
+                <a class="downward current"
+                  ><span class="visually-hidden">По убыванию</span></a
+                >
+              </div>
             </div>
           </div>
 
@@ -391,14 +389,14 @@
               alt="Логотип магазина Device"
             />
           </a>
-          <ul class="footer-user-navigation">
-            <li><a class="enter" href="">Валентин Петухов</a></li>
-            <li><a class="footer-user-exit" href="">Выйти</a></li>
-          </ul>
-          <ul class="footer-shop-navigation">
-            <li><a class="compare" href="">Сравнить</a></li>
-            <li><a class="cart" href="">Корзина</a></li>
-          </ul>
+          <div class="footer-user-navigation">
+            <a class="enter" href="">Валентин Петухов</a>
+            <a class="footer-user-exit" href="">Выйти</a>
+          </div>
+          <div class="footer-shop-navigation">
+            <a class="compare" href="">Сравнить</a>
+            <a class="cart" href="">Корзина</a>
+          </div>
         </div>
         <div class="footer-second-line">
           <p class="address">
