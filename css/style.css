@@ -1745,6 +1745,7 @@ button.modal-close {
 
   width: 20px;
   height: 22px;
+  padding: 0;
 
   border: none;
   background-color: transparent;
